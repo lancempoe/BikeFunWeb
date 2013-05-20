@@ -38,6 +38,14 @@ img.header-background-image{
     text-shadow: -2px 2px #000000;
     color:#4c9133;
 }
+
+.bff {
+    color:#4c9133;
+    font-weight:bold;
+    font-size:20px;
+    text-shadow: -1px 1px #000000;
+}
+
 .header-title-bikefun {
     font-family:"Cooper",'Helvetica',sans-serif;
     font-size:77px;
@@ -77,6 +85,8 @@ img.header-background-image{
 
 }
 
+
+
 .content {
     display:block;
 	text-align:center;
@@ -95,7 +105,29 @@ img.header-background-image{
     background:linear-gradient(to bottom,#f2f6f2 0,#b9c6b9 100%);
 }
 
+.content-full-description {
+    margin:5px;
+	width:auto;
+    border-radius:4px
+}
 
+
+.content-description-left {
+    width:300px;
+}
+.content-full-description>img {
+	left:12px
+}
+.content-full-description>p {
+    text-align:left;
+
+}.content-description-right {
+
+}
+.content-description-right>:first-letter
+{
+    font-size:130%;
+}
 a.download{
 	width:200px;
 	height:73px;
