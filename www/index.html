@@ -28,9 +28,40 @@
 
 </script>
 
+<script type="text/javascript">
+    window.onload = function()
+    {
+        var text = "";
+        var includeSpokes = true;
+        var allBikes = "abcdefghijklmnopqrstuvwrxyz";
+        var longBikes = "kve";
+        var normalBikes = "cdfhiopqstuwz";
+        var funnyBikes = "abgmnjyx";
+        var favoriteBikes = "zwti";
+
+        var possible = allBikes;
+
+        text += possible.charAt(Math.floor(Math.random() * possible.length));
+
+        if(includeSpokes)
+            text = text.toUpperCase();
+        else
+            text = text.toLowerCase();
+
+        document.getElementById("bike").innerHTML= text;
+    }
+</script>
+
 <div class="header-full">
     <!--<img src="img/headerbg.jpg" class="header-background-image" />-->
-    <div ><p class="header-title-bikefun header-title">BIKE FUN</p><p class="header-title-finder header-title">FINDER</p></div>
+    <div class="wrapper">
+        <div class ="padding">
+            <div class="bikeSign">
+                <p class="bikeFont" id="bike"></p>
+                <p class="header-title-bikefun header-title">BIKE FUN FINDER</p>
+            </div>
+        </div>
+    </div>
     <div class="content-social">
         <div class="social social-left">
             <div class="header-subtitle">Find the fun!</div>

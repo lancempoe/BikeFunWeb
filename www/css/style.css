@@ -8,6 +8,16 @@
     src: url(../fonts/StencilStd.otf) format("opentype");
 }
 
+@font-face {
+    font-family: "Capture";
+    src: url(../fonts/Captureit.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Bikes";
+    src: url(../fonts/BIKES.ttf) format("truetype");
+}
+
 html, body {
     background-color:#e3e3c1;
 }
@@ -17,6 +27,7 @@ body{
 }
 
 
+
 a {
     color:#444
 }
@@ -24,6 +35,83 @@ a:visited {
 	color:#444
 }
 
+.wrapper {
+
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.padding {
+    padding-left: 11px;
+    padding-right: 11px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+.bikeSign {
+    background-image: url("../img/tile.png");
+    background-repeat: repeat;
+    text-align: center;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    width:auto;
+    max-width: 600px;
+    height:auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+    position:relative;
+    -webkit-box-shadow:0 1px 2px 1px rgba(0,0,0,0.25);
+    box-shadow:0 1px 2px 1px rgba(0,0,0,0.25);
+    border:8px solid rgba(40,50,8,1);
+    border-radius:18px
+}
+
+.bikeFont {
+    font-family: 'Bikes';
+    font-size: 190px;
+    line-height: 200px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    text-align: center;
+    color: rgba(25,40,8,.90);
+}
+
+.header-title {
+    font-family:'Helvetica Neue' ,'Helvetica',sans-serif;
+    font-size:57px;
+    text-align:center;
+    font-weight: bold;
+    margin:0;
+    color:rgba(25,40,8,.90);
+}
+
+@media screen and (max-width:900px){
+    .header-title {
+        font-size:57px
+    }
+    .bikeFont {
+        font-size:190px;
+    }
+}
+
+@media screen and (max-width:600px){
+    .header-title {
+        font-size:44px
+    }
+    .bikeFont {
+         font-size:150px;
+    }
+}
+
+@media screen and (max-width:475px){
+    .header-title {
+        font-size:37px;
+    }
+    .bikeFont {
+         font-size:120px;
+    }
+}
 .header-full {
     width:100;
     margin:0px;
@@ -33,11 +121,6 @@ img.header-background-image{
     width:100%;
 }
 
-.header-title {
-    margin:0;
-    text-shadow: -2px 2px #000000;
-    color:#4c9133;
-}
 
 .bff {
     color:#4c9133;
@@ -46,39 +129,11 @@ img.header-background-image{
     text-shadow: -1px 1px #000000;
 }
 
-.header-title-bikefun {
-    font-family:"Cooper",'Helvetica',sans-serif;
-    font-size:77px;
-    text-align:center
-}
-
-.header-title-finder {
-    font-family:"Stencil",'Helvetica',sans-serif;
-    font-size:77px;
-    text-align:center
-}
-
 .header-subtitle {
 	font-size:22px;
 }
 
-@media screen and (max-width:900px){
-	.header-title {
-		font-size:75px
-	}
-}
 
-@media screen and (max-width:600px){
-	.header-title {
-		font-size:67px
-	}
-}
-
-@media screen and (max-width:400px){
-	.header-title {
-		font-size:51px
-	}
-}
 .content-social {
     text-align:center;
 	padding-bottom:5px;
