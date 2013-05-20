@@ -3,6 +3,7 @@
 <head>
     <title>Bike Fun Finder</title>
     <link href="css/style.css" rel="stylesheet" type="text/css">
+    <script src="scripts/jquery-1.9.1.min.js"></script>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
 </head>
 <body>
@@ -29,8 +30,7 @@
 </script>
 
 <script type="text/javascript">
-    window.onload = function()
-    {
+    $(document).ready(function() {
         var text = "";
         var includeSpokes = false;
         var allBikes = "abcdefghijklmnopqrstuvwrxyz";
@@ -49,7 +49,7 @@
             text = text.toLowerCase();
 
         document.getElementById("bike").innerHTML= text;
-    }
+    });
 </script>
 
 <div class="header-full">
