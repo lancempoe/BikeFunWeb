@@ -8,13 +8,7 @@
 </head>
 <body>
 <div id="fb-root"></div>
-<script>(function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
-    fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
+
 <script type="text/javascript">
 
     var _gaq = _gaq || [];
@@ -33,11 +27,11 @@
     $(document).ready(function() {
         var text = "";
         var includeSpokes = false;
-        var allBikes = "abcdefghijklmnopqrstuvwrxyz";
+        var allBikes = "abcdefghijklopqrstuvwrxyz";
         var longBikes = "kve";
         var normalBikes = "cdfhiopqstuwz";
         var funnyBikes = "abgmnjyx";
-        var favoriteBikes = "zwti";
+        var favoriteBikes = "zwticdfhiopqstuwzkve";
 
         var possible = allBikes;
 
@@ -111,6 +105,14 @@
 <div class="footer">
     <img class="footer-icon" src="img/footer-icon.jpg" />
     <p class="footer-line">©2013 Bike Fun Finder</p>
+    <script>
+        var CoinWidget_Config = {
+            address : '1MHJETvnsZYRh3JRFMUipScTcNvbuaoqGB',
+            counter : 'hide',
+            text : 'Donate BTC'
+        };
+    </script>
+    <script src="http://c.coinwidget.com/widget.js"></script>
 </div>
 </body>
 </html>
