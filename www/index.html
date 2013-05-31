@@ -13,12 +13,13 @@
 
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', 'UA-41069312-1']);
+    _gaq.push(['_setDomainName', 'bikefunfinder.com <http://bikefunfinder.com>']);
     _gaq.push(['_trackPageview']);
 
     (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js' <http://google-analytics.com/ga.js'>;
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
     })();
 
 </script>
@@ -46,6 +47,8 @@
     });
 </script>
 
+
+<div class="content">
 <div class="header-full">
     <!--<img src="img/headerbg.jpg" class="header-background-image" />-->
     <div class="wrapper">
@@ -82,10 +85,23 @@
             </div>
         </div>
     </div>
-
+    <div class="donations">
+        <div class="header-subtitle">Support the fun!</div>
+        <div class="donate-paypal">
+            <img src="img/dummyPaypal.gif"/>
+        </div>
+        <div class="donate-bitcoin">
+            <script>
+                var CoinWidget_Config = {
+                    address : '1MHJETvnsZYRh3JRFMUipScTcNvbuaoqGB',
+                    counter : 'hide',
+                    text : 'Donate Bitcoin'
+                };
+            </script>
+            <script src="scripts/coinwidgit.js"></script>
+        </div>
+    </div>
 </div>
-
-<div class="content">
 <h2><span class="bff">BFF</span> - Coming soon to Android and Iphone!</h2>
     <div class="downloads">
         <a href="http://www.bikefunfinder.com" class="download download-appstore" title="Download on the Mac App Store">
@@ -100,16 +116,7 @@
             <img src="img/timeAndDayScreen.jpg" class="content-description-left description"/>
             <p class="content-description-right"><span class="bff">Bike Fun Finder</span> was born in the People's Republic of Portland located in the heart of Cascadia. Our tools help bikes of all sizes (and the people that ride them) meet friends, neighbors, and the city they ride in. We strive to create a bridge between social media and a real social city. Learn about new places to recreate, relax, and live. Not only can you find bike rides starting close to where you are but you can also find bike rides traveling by close to your current location.</p>
     </div>
-    <div class="donate-bitcoin">
-        <script>
-            var CoinWidget_Config = {
-                address : '1MHJETvnsZYRh3JRFMUipScTcNvbuaoqGB',
-                counter : 'hide',
-                text : 'Donate Bitcoin'
-            };
-        </script>
-        <script src="scripts/coinwidgit.js"></script>
-    </div>
+
 </div>
 
 <div class="footer">
