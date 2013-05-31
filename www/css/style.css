@@ -249,3 +249,7 @@ a.download>img {
     text-align:center;
     padding-top:10px;
 }
+
+.footer>.donate-bitcoin {
+    padding: 0px 0px 10px 0px;
+}
