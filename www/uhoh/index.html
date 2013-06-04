@@ -20,7 +20,6 @@
     <script type="text/javascript" language="javascript" src="scripts/GAPlugin.js"></script>
     <script type="text/javascript">
         var gaPlugin;
-        document.domain = "bikefunfinder.com";
 
         // Wait for Cordova to connect with the device
         // More details here: http://docs.phonegap.com/en/1.0.0/phonegap_events_events.md.html
@@ -30,7 +29,8 @@
         function onDeviceReady() {
             gaPlugin = window.plugins.gaPlugin;
             gaPlugin.init(gaSuccess, gaError, "UA-41361242-3", 30);
-            gaPlugin.trackPage(gaSuccess, gaError, "index.html");
+            gaPlugin.trackPage(gaSuccess, gaError, "index.html")
+            document.domain = "bikefunfinder.com";
         }
 
         function onResume() {
