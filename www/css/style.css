@@ -52,6 +52,11 @@ a:visited {
     border-radius:18px
 }
 
+.startEmpty {
+    margin: 0px;
+    visibility: hidden;
+
+}
 .bikeFont {
     font-family: 'Bikes';
     font-size: 190px;
@@ -60,6 +65,11 @@ a:visited {
     margin-bottom: 0px;
     text-align: center;
     color: rgba(25,40,8,.90);
+    visibility: visible;
+}
+
+.bikefontEnabled {
+    line-height: 200px;
 }
 
 .header-title {
@@ -97,14 +107,13 @@ a:visited {
 }
 
 @media screen and (max-width:900px){
-    .content {
-        width: 100%
-    }
     .header-title {
         font-size:57px
     }
     .bikeFont {
-        font-size:190px;
+        font-size:200px;
+
+        line-height: 190px;
     }
 
 }
@@ -120,6 +129,7 @@ a:visited {
     }
     .bikeFont {
          font-size:150px;
+        line-height: 175px;
     }
 
 }
@@ -130,6 +140,7 @@ a:visited {
     }
     .bikeFont {
          font-size:120px;
+        line-height: 150px;
     }
 }
 .header-full {
@@ -165,9 +176,13 @@ img.header-background-image{
 .content-full-description {
     margin:5px;
 	width:auto;
-    border-radius:4px
+    border-radius:4px;
+    position: relative;
 }
 
+.hereAndNow:hover .screenshot-screen>img {
+
+}
 .descpription {
     padding: 0px 10px;
 }
@@ -176,8 +191,6 @@ img.header-background-image{
     width:300px;
 }
 .content-full-description>img {
-	left:12px;
-    padding: 5px;
 }
 .content-full-description>p {
     text-align:left;
@@ -185,6 +198,43 @@ img.header-background-image{
 }.content-description-right {
 
 }
+
+.screenshot-case {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.screenshot-screen {
+    position: relative;
+    left: 24px;
+    top: 117px;
+    display: block;
+}
+.screenshot-parent {
+    position: relative;
+    display: block;
+    width: 368px;
+    height: 716px;
+}
+
+@media screen and (max-width:600px){
+    .screenshot-case {
+        width: 181px;
+    }
+    .screenshot-screen {
+        width: 160px;
+        position: relative;
+        left: 11px;
+        top: 58px;
+    }
+    .screenshot-parent {
+        width: 181px;
+        height: 358px;
+    }
+
+}
+.screenshot-button-group {}
 .content-description-right>:first-letter
 {
     font-size:130%;

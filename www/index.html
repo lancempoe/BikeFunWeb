@@ -3,7 +3,7 @@
 <head>
     <title>Bike Fun Finder</title>
     <link href="css/style.css" rel="stylesheet" type="text/css">
-    <script src="scripts/jquery-1.9.1.min.js"></script>
+    <script src="scripts/jquery-1.9.1.min.js" type="text/javascript"></script>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
 </head>
 <body>
@@ -22,7 +22,6 @@
     })();
 
 </script>
-
 <script type="text/javascript">
     $(document).ready(function() {
         var text = "";
@@ -41,8 +40,20 @@
             text = text.toUpperCase();
         else
             text = text.toLowerCase();
-
         document.getElementById("bike").innerHTML= text;
+        document.getElementById("bike").className = "bikeFont";
+        $(calender).click(function() {
+            $(screenshotscreen).find("img").attr("src", "img/iphone-ss-calender.png");
+        });
+        $(map).click(function() {
+            $(screenshotscreen).find("img").attr("src", "img/iphone-ss-map.png");
+        });
+        $(createRide).click(function() {
+            $(screenshotscreen).find("img").attr("src", "img/iphone-ss-create.png");
+        });
+        $(tracking).click(function() {
+            $(screenshotscreen).find("img").attr("src", "img/iphone-ss-track.png");
+        });
     });
 </script>
 
@@ -53,7 +64,7 @@
     <div class="wrapper">
         <div class ="padding">
             <div class="bikeSign">
-                <p class="bikeFont" id="bike"></p>
+                <p id="bike" class="startEmpty"></p>
                 <p class="header-title-bikefun header-title">BIKE FUN FINDER</p>
             </div>
         </div>
@@ -84,6 +95,49 @@
             </div>
         </div>
     </div>
+
+</div>
+
+    <div class="content-full-description">
+        <table>
+            <tr>
+                <td>
+                    <div class="screenshot-parent">
+                        <img src="img/iphone-case.png" class="screenshot-case"/>
+                        <div id="screenshotscreen">
+                            <img src="img/iphone-ss-map.png" class="screenshot-screen"/>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div clas="screenshot-button-group">
+                        <div id="calender" class="screenshot-button">
+                            <p>Check out rides posted on the calendar!</p>
+                        </div>
+                        <div id="map" class="screenshot-button">
+                            <p>Find rides starting soon on a map!</p>
+                        </div>
+                        <div id="tracking" class="screenshot-button">
+                            <p>Track rides in realtime so your friends can join!</p>
+                        </div>
+                        <div id="createRide" class="screenshot-button">
+                            <p>Create your own ride!</p>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <h2><span class="bff">BFF</span> - Coming soon to Android and Iphone!</h2>
+        <div class="downloads">
+            <a href="http://www.bikefunfinder.com" class="download download-appstore" title="Download on the Mac App Store">
+                <img class="appstore-img" src="img/download-appstore.png" />
+            </a>
+            <a href="http://www.bikefunfinder.com" class="download download-playstore" title="Downlaod at the Google Play Store">
+                <img class="playstore-img" src="img/download-playstore.png" />
+            </a>
+        </div>
+        <p class="content-description-right"><span class="bff">Bike Fun Finder</span> was born in the People's Republic of Portland located in the heart of Cascadia. Our tools help bikes of all sizes (and the people that ride them) meet friends, neighbors, and the city they ride in. We strive to create a bridge between social media and a real social city. Learn about new places to recreate, relax, and live. Not only can you find bike rides starting close to where you are but you can also find bike rides traveling by close to your current location.</p>
+    </div>
     <div class="donations">
         <div class="header-subtitle">Support the fun!</div>
         <div class="donate-paypal">
@@ -106,21 +160,6 @@
             <script src="scripts/coinwidgit.js"></script>
         </div>
     </div>
-</div>
-<h2><span class="bff">BFF</span> - Coming soon to Android and Iphone!</h2>
-    <div class="downloads">
-        <a href="http://www.bikefunfinder.com" class="download download-appstore" title="Download on the Mac App Store">
-                <img class="appstore-img" src="img/download-appstore.png" />
-        </a>
-        <a href="http://www.bikefunfinder.com" class="download download-playstore" title="Downlaod at the Google Play Store">
-                <img class="playstore-img" src="img/download-playstore.png" />
-        </a>
-    </div>
-    <div class="content-full-description">
-            <img src="img/hereAndNowScreen.jpg" class="content-description-left description"/>
-            <img src="img/timeAndDayScreen.jpg" class="content-description-left description"/>
-            <p class="content-description-right"><span class="bff">Bike Fun Finder</span> was born in the People's Republic of Portland located in the heart of Cascadia. Our tools help bikes of all sizes (and the people that ride them) meet friends, neighbors, and the city they ride in. We strive to create a bridge between social media and a real social city. Learn about new places to recreate, relax, and live. Not only can you find bike rides starting close to where you are but you can also find bike rides traveling by close to your current location.</p>
-    </div>
 
 </div>
 
@@ -129,5 +168,8 @@
     <p class="footer-line">©2013 Bike Fun Finder</p>
 
 </div>
+
+
+
 </body>
 </html>
