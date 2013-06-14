@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bike Fun Finder Beta Invite</title>
+    <link href="css/mdStyles.css" rel="stylesheet" type="text/css">
+    <script src="scripts/Markdown.Converter.js" type="text/javascript"></script>
+    <script src="scripts/jquery-1.9.1.min.js" type="text/javascript"></script>
+</head>
+<body>
+<script type="text/javascript">
+    $(document).ready(function() {
+        var converter = new Markdown.Converter();
+        mdText = document.getElementById("markdownContent").innerText;
+        document.getElementById('renderBody').innerHTML = converter.makeHtml(mdText);
+        //document.getElementById("renderBody").write(converter.makeHtml(mdText));
+        //document.write(converter.makeHtml(mdText));
+    });
+</script>
+
+
+<span id="markdownContent" style="display: none;">
+Bike Fun Finder Beta
+=================
+Thank you for testing our app out! This is bleeding edge technology (for us) and we need to polish things up a little bit.
+Feel free to create and track your own rides, but keep in mind we will probably delete everything before the official release.
+
+Android Installation
+------------------------
+- Make sure your phone can install 3rd party apps.
+  - Simply pop over to your phone's Settings menu (usually found by hitting the menu button from the home screen) and tap the option for Applications.
+  - You should see an option that says "Unknown sources." Fill the check box next to it, then click OK on the resulting popup alert.
+- Download the APK here:
+  - not yet!?
+
+Contact Us
+--------------
+- BikeFunFinder@gmail.com
+- https://twitter.com/BikeFunFinder
+- https://www.facebook.com/BikeFunFinder
+
+We are Lance Poehler, Tim Neuwerth, and Nathan Frost.
+
+</span>
+
+<div id="renderBody" stye="display: inline;">
+
+</div>
+</body>
+</html>
