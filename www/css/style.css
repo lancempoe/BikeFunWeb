@@ -208,7 +208,7 @@ img.header-background-image{
 .screenshot-screen {
     position: relative;
     left: 24px;
-    top: 117px;
+    top: 118px;
     display: block;
 }
 .screenshot-parent {
@@ -251,7 +251,12 @@ img.header-background-image{
     }
 
 }
-.screenshot-button-group {}
+.screenshot-button-group {
+    text-align: center;
+}
+.screenshot-table {
+    width: 100%;
+}
 .content-description-right>:first-letter
 {
     font-size:130%;
