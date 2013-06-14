@@ -63,6 +63,11 @@
             $('#tracking').addClass("highlighted");
             $('#screenshotscreen').find("img").attr("src", "img/iphone-ss-track.png");
         });
+        $('#searchRide').click(function() {
+            $('#featureList div').removeClass("highlighted");
+            $('#search').addClass("highlighted");
+            $('#screenshotscreen').find("img").attr("src", "img/iphone-ss-search.png");
+        });
     });
 </script>
 
@@ -131,6 +136,9 @@
                         </div>
                         <div id="createRide" class="screenshot-button createIcon">
                             <p>Create your own ride!</p>
+                        </div>
+                        <div id="searchRide" class="screenshot-button searchIcon">
+                            <p>Search for rides by keyword, type, and city!</p>
                         </div>
                     </div>
                 </td>

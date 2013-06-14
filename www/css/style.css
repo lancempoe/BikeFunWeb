@@ -384,11 +384,18 @@ a.download>img {
     content: "\f124";
 }
 .createIcon>p:before {
+     position:relative;
+     font-family: FontAwesome;
+     top:0;
+     left:-5px;
+     content: "\f067";
+ }
+.searchIcon>p:before {
     position:relative;
     font-family: FontAwesome;
     top:0;
     left:-5px;
-    content: "\f044";
+    content: "\f002";
 }
 
 .screenshot-button {
@@ -398,6 +405,7 @@ a.download>img {
     padding-left: 12px;
     padding-right: 7px;
     background: #8195af;
+    text-align: right;
 
 }
 .screenshot-button:hover {
