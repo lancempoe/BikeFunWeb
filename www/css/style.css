@@ -220,6 +220,23 @@ img.header-background-image{
 
 @media screen and (max-width:600px){
     .screenshot-case {
+        width: 276px;
+    }
+    .screenshot-screen {
+        width: 240px;
+        position: relative;
+        left: 18px;
+        top: 88px;
+    }
+    .screenshot-parent {
+        width: 276px;
+        height: 537px;
+    }
+
+}
+
+@media screen and (max-width:475px){
+    .screenshot-case {
         width: 181px;
     }
     .screenshot-screen {
