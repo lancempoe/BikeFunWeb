@@ -1,0 +1,98 @@
+
+.natesButton2 {
+    color: #fff;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#9fb3cc), to(#5b80ab), color-stop(0.5, #6b8bb2), color-stop(0.51, #597eaa) ) !important;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+    color: white;
+    font-weight: bold;
+    -webkit-border-radius: 4px;
+    border: 1px solid
+    rgba(0, 0, 0, 0.5);
+}
+
+.menuButton>div {
+    background-image: none;
+    background-color: #fff;
+}
+
+.oldRide {
+    background-color: grey !important;
+
+}
+
+.currentRide, .activeRide {
+    background-color: #9ddaa6 !important;
+}
+
+.futureRide {
+    background-color: white !important;
+
+}
+
+.rideBlock {
+    display: inline-block;
+    z-index: auto;
+    margin:0px;
+
+}
+.rideTime {
+    z-index: auto;
+    margin:0px;
+    padding:0px;
+    position: absolute;
+    width: 60px;
+    border-right-style: solid;
+    border-right-width: 1px;
+}
+
+.time {
+    font-size:14px;
+    font-style: bold;
+}
+
+.distance {
+    font-size:12px;
+    font-style: italic;
+}
+.distanceUnit {
+    font-size: 9zpx;
+    font-style: italic;
+}
+.descriptionBlock {
+    left:100px;
+    z-index: auto;
+    margin:0px;
+    margin-left: 2px;
+    padding-left: 70px;
+}
+
+
+.rideName {
+    font-size:20px;
+}
+
+.description {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space:nowrap;
+    visibility:hidden;
+}
+
+.address {
+
+}
+
+.eventHeader {
+    text-transform: none;
+    font-size: 15px !important;
+    font-weight: bold !important;
+    color: white;
+    margin-left: 75px;
+    overflow: hidden;
+    height: 38px;
+    line-height: 40px;
+    text-overflow: ellipsis;
+
+
+}
+
