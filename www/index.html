@@ -42,17 +42,26 @@
             text = text.toLowerCase();
         document.getElementById("bike").innerHTML= text;
         document.getElementById("bike").className = "bikeFont";
-        $(calendar).click(function() {
-            $(screenshotscreen).find("img").attr("src", "img/iphone-ss-calendar.png");
+
+        $('#calendar').click(function() {
+            $('#featureList div').removeClass("highlighted");
+            $('#calendar').addClass("highlighted");
+            $('#screenshotscreen').find("img").attr("src", "img/iphone-ss-calendar.png");
         });
-        $(map).click(function() {
-            $(screenshotscreen).find("img").attr("src", "img/iphone-ss-map.png");
+        $('#map').click(function() {
+            $('#featureList div').removeClass("highlighted");
+            $('#map').addClass("highlighted");
+            $('#screenshotscreen').find("img").attr("src", "img/iphone-ss-map.png");
         });
-        $(createRide).click(function() {
-            $(screenshotscreen).find("img").attr("src", "img/iphone-ss-create.png");
+        $('#createRide').click(function() {
+            $('#featureList div').removeClass("highlighted");
+            $('#createRide').addClass("highlighted");
+            $('#screenshotscreen').find("img").attr("src", "img/iphone-ss-create.png");
         });
-        $(tracking).click(function() {
-            $(screenshotscreen).find("img").attr("src", "img/iphone-ss-track.png");
+        $('#tracking').click(function() {
+            $('#featureList div').removeClass("highlighted");
+            $('#tracking').addClass("highlighted");
+            $('#screenshotscreen').find("img").attr("src", "img/iphone-ss-track.png");
         });
     });
 </script>
@@ -110,17 +119,17 @@
                     </div>
                 </td>
                 <td>
-                    <div clas="screenshot-button-group">
-                        <div id="calendar" class="screenshot-button">
+                    <div id="featureList" clas="screenshot-button-group">
+                        <div id="calendar" class="screenshot-button calendarIcon">
                             <p>Check out rides posted on the calendar!</p>
                         </div>
-                        <div id="map" class="screenshot-button">
+                        <div id="map" class="screenshot-button mapIcon highlighted">
                             <p>Find rides starting soon on a map!</p>
                         </div>
-                        <div id="tracking" class="screenshot-button">
+                        <div id="tracking" class="screenshot-button trackingIcon">
                             <p>Track rides in realtime so your friends can join!</p>
                         </div>
-                        <div id="createRide" class="screenshot-button">
+                        <div id="createRide" class="screenshot-button createIcon">
                             <p>Create your own ride!</p>
                         </div>
                     </div>
