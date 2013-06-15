@@ -11,8 +11,7 @@ function setupDatePicker() {
         }
     });
     $('#datepicker').click(function(){
-                           $('#datepicker').mobiscroll('show');
-                           window.scrollTo(0, 50);
+        $('#datepicker').mobiscroll('show');
         return false;
     });
 };

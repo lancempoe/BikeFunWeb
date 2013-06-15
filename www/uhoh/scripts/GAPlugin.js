@@ -84,11 +84,11 @@ function gaError(msg){
     GAPlugin.prototype.setVariable = function(success, fail, index, value) {
         return cordovaRef.exec(success, fail, 'GAPlugin', 'setVariable', [index, value]);
     };
-    
+
     GAPlugin.prototype.exit = function(success, fail) {
         return cordovaRef.exec(success, fail, 'GAPlugin', 'exitGA');
     };
- 
+
     cordovaRef.addConstructor(function() {
         if(!window.plugins) {
             window.plugins = {};

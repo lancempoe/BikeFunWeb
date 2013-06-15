@@ -418,11 +418,11 @@ function bikefunfinder(){
     }
     var strongName;
     try {
-      unflattenKeylistIntoAnswers(['not_mobile', 'no', 'gecko1_8'], '0E69EB29C9CB8538D62C934B377A6D64');
-      unflattenKeylistIntoAnswers(['not_mobile', 'yes', 'safari'], '126223247BF516E0A8BE0410E4F602FB');
-      unflattenKeylistIntoAnswers(['mobilesafari', 'no', 'safari'], '367C83880089C6B6A96ED20D9130C3CF');
-      unflattenKeylistIntoAnswers(['mobilesafari', 'yes', 'safari'], '52EF8C50F54187A78BCE148CF520E6DF');
-      unflattenKeylistIntoAnswers(['not_mobile', 'no', 'safari'], '7A61E6F6E81504B5D968B8FA46EF5A5D');
+      unflattenKeylistIntoAnswers(['not_mobile', 'no', 'safari'], '21E1AF24DCD989388C1F6D008B5C9EC2');
+      unflattenKeylistIntoAnswers(['not_mobile', 'yes', 'safari'], '30BCA5113D989E9C0C9180181FFCB410');
+      unflattenKeylistIntoAnswers(['mobilesafari', 'no', 'safari'], '5F6D404C1B1971958C9A4FD2931E74B2');
+      unflattenKeylistIntoAnswers(['not_mobile', 'no', 'gecko1_8'], '6271EF87CF62743EAAA72DB6E6C16F8B');
+      unflattenKeylistIntoAnswers(['mobilesafari', 'yes', 'safari'], '7A5D237773EAF46F4D51F458D3D14DBF');
       strongName = answers[computePropValue('mobile.user.agent')][computePropValue('phonegap.env')][computePropValue('user.agent')];
       var idx = strongName.indexOf(':');
       if (idx != -1) {

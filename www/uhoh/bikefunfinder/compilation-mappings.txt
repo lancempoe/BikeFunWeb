@@ -1,26 +1,26 @@
-0E69EB29C9CB8538D62C934B377A6D64.cache.js
+21E1AF24DCD989388C1F6D008B5C9EC2.cache.js
+mobile.user.agent not_mobile
+phonegap.env no
+user.agent safari
+
+30BCA5113D989E9C0C9180181FFCB410.cache.js
+mobile.user.agent not_mobile
+phonegap.env yes
+user.agent safari
+
+5F6D404C1B1971958C9A4FD2931E74B2.cache.js
+mobile.user.agent mobilesafari
+phonegap.env no
+user.agent safari
+
+6271EF87CF62743EAAA72DB6E6C16F8B.cache.js
 mobile.user.agent not_mobile
 phonegap.env no
 user.agent gecko1_8
 
-126223247BF516E0A8BE0410E4F602FB.cache.js
-mobile.user.agent not_mobile
-phonegap.env yes
-user.agent safari
-
-367C83880089C6B6A96ED20D9130C3CF.cache.js
-mobile.user.agent mobilesafari
-phonegap.env no
-user.agent safari
-
-52EF8C50F54187A78BCE148CF520E6DF.cache.js
+7A5D237773EAF46F4D51F458D3D14DBF.cache.js
 mobile.user.agent mobilesafari
 phonegap.env yes
-user.agent safari
-
-7A61E6F6E81504B5D968B8FA46EF5A5D.cache.js
-mobile.user.agent not_mobile
-phonegap.env no
 user.agent safari
 
 Devmode:devmode.js
