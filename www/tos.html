@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bike Fun Finder Beta Invite</title>
+    <link href="css/mdStyles.css" rel="stylesheet" type="text/css">
+    <script src="scripts/Markdown.Converter.js" type="text/javascript"></script>
+    <script src="scripts/jquery-1.9.1.min.js" type="text/javascript"></script>
+
+</head>
+<body>
+<script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-41069312-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+</script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        var converter = new Markdown.Converter();
+        mdText = document.getElementById("markdownContent").innerText;
+        document.getElementById('renderBody').innerHTML = converter.makeHtml(mdText);
+        //document.getElementById("renderBody").write(converter.makeHtml(mdText));
+        //document.write(converter.makeHtml(mdText));
+    });
+</script>
+
+
+<span id="markdownContent" style="display: none;">
+Bike Fun Finder Terms of Service and Privacy Policy
+===================================================
+Bike Fun Finder (BFF) is not liable for the data, or how the data is use or viewed within the confines of this application.
+We are not liable for anything you to with this app.  Bike fun finder intended for bicyle rides and bicycle related events only.
+
+
+</span>
+
+<div id="renderBody" stye="display: inline;">
+
+</div>
+</body>
+</html>
